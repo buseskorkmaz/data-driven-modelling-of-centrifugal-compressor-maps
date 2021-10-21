@@ -1,0 +1,6 @@
+sample_size,sample_method,kernel,alpha,MSE of GPR,MSE of Polynomial Fit,Integral Absolute Error of GPR,Integral Absolute Error of Polynomial Fit
+20,systematic,"0.1**2 * RBF(length_scale=[0.1, 1.8e+06])",1e-20,inf,inf,inf,inf
+20,systematic,"22.4**2 * RationalQuadratic(alpha=0.1, length_scale=1)",0.001,0.0009979527910967429,0.001797896347013309,1.5737557672111941,2.300662792598716
+20,systematic,"0.316**2 * ExpSineSquared(length_scale=1, periodicity=3)",0.001,0.0006226175970643783,0.001797896347013309,1.3342581715841741,2.300662792598716
+20,systematic,0.01**2 * DotProduct(sigma_0=1) ** 2,1e-10,0.0022101707095751356,0.001797896347013309,3.1889758112721,2.300662792598716
+20,systematic,"0.1**2 * Matern(length_scale=1, nu=1)",1e-08,0.0007341578165722504,0.001797896347013309,1.501695139016048,2.300662792598716
